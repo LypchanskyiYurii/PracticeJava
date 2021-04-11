@@ -14,6 +14,7 @@ public class WriteAndRead {
         System.out.println(list);
 
         System.out.println(list.get(0));
+        System.out.println(list.get(5));
         System.out.println(list.get(9));
 
         System.out.println(list.size());
