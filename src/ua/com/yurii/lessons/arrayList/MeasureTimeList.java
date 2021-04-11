@@ -15,10 +15,11 @@ public class MeasureTimeList {
     }
 
     private static void measureTime(List<Integer> list) {
+
         long start = System.currentTimeMillis();
 
-        for (int i = 0; i < 1000000; i++) {
-            list.add(i);
+        for (int i = 0; i < 100000; i++) {
+            list.add(0, i);
         }
 
         long end = System.currentTimeMillis();
