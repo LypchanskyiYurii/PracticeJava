@@ -6,7 +6,7 @@ public class MyLinkedList {
     private Node head;
     private int size;
 
-    public void add (int value){
+    public void add(int value) {
         if (head == null) {
             this.head = new Node(value);
         } else {
@@ -18,6 +18,37 @@ public class MyLinkedList {
             temp.setNext(new Node(value));
         }
         size++;
+    }
+
+    public int get(int index) {
+        int currentIndex = 0;
+        Node temp = head;
+
+        while (temp != null) {
+            if (currentIndex == index) {
+                return temp.getValue();
+            } else {
+                temp = temp.getNext();
+                currentIndex++;
+            }
+        }
+        throw new IllegalArgumentException();
+    }
+
+    public void remove(int index) {
+        int currentIndex = 0;
+        Node temp = head;
+
+        while (temp != null) {
+            if ((currentIndex + 1) == index) {
+                temp.setNext(temp.getNext().getNext());
+                size--;
+                return;
+            } else {
+                temp.getNext();
+                currentIndex++;
+            }
+        }
     }
 
     public String toString() {
@@ -37,7 +68,7 @@ public class MyLinkedList {
         private int value;
         private Node next;
 
-        public Node (int value) {
+        public Node(int value) {
             this.value = value;
         }
 
