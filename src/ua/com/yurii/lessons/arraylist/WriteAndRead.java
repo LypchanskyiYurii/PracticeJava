@@ -1,4 +1,4 @@
-package ua.com.yurii.lessons.arrayList;
+package ua.com.yurii.lessons.arraylist;
 
 import java.util.ArrayList;
 import java.util.List;

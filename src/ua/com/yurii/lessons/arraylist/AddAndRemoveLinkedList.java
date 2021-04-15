@@ -1,6 +1,6 @@
-package ua.com.yurii.lessons.arrayList;
+package ua.com.yurii.lessons.arraylist;
 
-public class Test {
+public class AddAndRemoveLinkedList {
     public static void main(String[] args) {
        MyLinkedList myLinkedList = new MyLinkedList();
        myLinkedList.add(1);

@@ -1,9 +1,9 @@
-package ua.com.yurii.lessons.hashMap;
+package ua.com.yurii.lessons.hashmap;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Test {
+public class PutAndGetHashMap {
     public static void main(String[] args) {
         Map<Integer, String> map = new HashMap<>();
 
