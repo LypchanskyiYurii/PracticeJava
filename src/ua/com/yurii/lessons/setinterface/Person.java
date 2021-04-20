@@ -11,6 +11,9 @@ public class Person {
         this.name = name;
     }
 
+    public int getId() {
+        return id;
+    }
 
     @Override
     public boolean equals(Object o) {
