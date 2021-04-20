@@ -2,13 +2,17 @@ package ua.com.yurii.lessons.setinterface;
 
 import java.util.Objects;
 
-public class Person {
+public class Person implements Comparable<Person> {
     private int id;
     String name;
 
     public Person(int id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getId() {
@@ -36,4 +40,15 @@ public class Person {
                 '}';
     }
 
+
+    @Override
+    public int compareTo(Person o) {
+        if (this.name.length() > o.getName().length()) {
+            return 1;
+        } else if (this.name.length() < o.getName().length()) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
 }
